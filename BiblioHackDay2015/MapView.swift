@@ -31,12 +31,12 @@ class MapView: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-        func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-            regionRadius * 15.0, regionRadius * 15.0)
-        self.map.setRegion(coordinateRegion, animated: true)
-    }
-    
+	func centerMapOnLocation(location: CLLocation) {
+		let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+			regionRadius * 15.0, regionRadius * 15.0)
+		self.map.setRegion(coordinateRegion, animated: true)
+	}
+	
     func loadInitialData() {
         let fileName = NSBundle.mainBundle().pathForResource("MuseiJSON", ofType: "json");
         var readError : NSError?

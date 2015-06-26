@@ -15,7 +15,9 @@
                                 <tableRow identifier="MuseumRow" id="a5I-Qp-vP1" customClass="MuseumTableRow" customModule="BiblioHackDay2015_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="NUZ-5e-HIb">
                                         <items>
-                                            <label height="1" alignment="left" verticalAlignment="center" text="Label" id="WkI-Rs-pWC"/>
+                                            <label width="1" alignment="left" verticalAlignment="center" text="Label" textAlignment="left" id="WkI-Rs-pWC">
+                                                <fontDescription key="font" type="system" weight="light" pointSize="10"/>
+                                            </label>
                                         </items>
                                     </group>
                                     <connections>
@@ -39,34 +41,60 @@
             <objects>
                 <controller id="ivQ-qj-6ox" customClass="MuseumDetailController" customModule="BiblioHackDay2015_WatchKit_Extension">
                     <items>
+<<<<<<< HEAD
                         <label width="1" alignment="left" text="Label" textAlignment="center" numberOfLines="3" id="GXd-Im-3Up"/>
                         <separator alignment="left" id="iM4-E6-4gv"/>
                         <slider width="1" alignment="left" value="1" maximum="5" steps="5" id="QXW-A7-Jdv"/>
+=======
+                        <label width="1" alignment="left" text="Label" textAlignment="center" numberOfLines="3" id="GXd-Im-3Up">
+                            <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <separator alignment="left" id="WOJ-z3-QO3">
+                            <color key="color" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <slider width="1" height="20" alignment="left" value="1" maximum="5" steps="5" id="gdm-Qv-PRW"/>
+                        <button width="1" height="100" alignment="left" id="8de-F1-K0S">
+                            <connections>
+                                <segue destination="793-ao-c4x" kind="modal" id="XkM-jC-SUF"/>
+                            </connections>
+                        </button>
+>>>>>>> origin/master
                     </items>
                     <connections>
+                        <outlet property="buttonImage" destination="8de-F1-K0S" id="6dh-k3-mN8"/>
                         <outlet property="museumTitle" destination="GXd-Im-3Up" id="ltp-GQ-uzh"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="386" y="222"/>
+            <point key="canvasLocation" x="386" y="224"/>
         </scene>
-        <!--Interface Controller-->
-        <scene sceneID="QJ4-YP-seh">
-            <objects>
-                <controller id="Twe-fS-Iis"/>
-            </objects>
-            <point key="canvasLocation" x="586" y="222"/>
-        </scene>
-        <!--Interface Controller-->
+        <!--Museum Map View Controller-->
         <scene sceneID="GYJ-Ov-EIU">
             <objects>
-                <controller id="sFE-oF-Q9O">
+                <controller id="sFE-oF-Q9O" customClass="MuseumMapViewController" customModule="BiblioHackDay2015_WatchKit_Extension">
                     <items>
-                        <map width="1" height="1" alignment="left" id="Srl-PU-hPN"/>
+                        <map height="1" alignment="left" id="mxB-pu-NNS"/>
                     </items>
+                    <connections>
+                        <outlet property="museumMap" destination="mxB-pu-NNS" id="ne0-Fd-rl8"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="337" y="551"/>
+        </scene>
+        <!--Single Map Controller-->
+        <scene sceneID="WI3-1W-4gy">
+            <objects>
+                <controller id="793-ao-c4x" customClass="SingleMapController" customModule="BiblioHackDay2015_WatchKit_Extension">
+                    <items>
+                        <map height="1" alignment="left" id="osg-92-yf2"/>
+                    </items>
+                    <connections>
+                        <outlet property="museumMap" destination="osg-92-yf2" id="4RZ-s3-4fm"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="553" y="491"/>
         </scene>
     </scenes>
 </document>

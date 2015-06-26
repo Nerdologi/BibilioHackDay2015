@@ -12,7 +12,6 @@ import MapKit
 public class MuseumsHandler {
 	
 	var museumArray = [Resource(name: NSLocalizedString("loading", comment: ""), id: NSLocalizedString("loading", comment: ""), address: "", www: "", coordinate: CLLocationCoordinate2D(latitude: 2,longitude: 2), phone: "", mail: "", detailsImageLink: "", fullImageLink: "")]
-    
 	
 	public init(){
 		
