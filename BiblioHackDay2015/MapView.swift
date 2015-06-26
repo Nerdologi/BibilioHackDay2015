@@ -18,6 +18,7 @@ class MapView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         //MILANO
         let initialLocation = CLLocation(latitude: 45.4642700, longitude:9.1895100)
         centerMapOnLocation(initialLocation)
@@ -44,14 +45,14 @@ class MapView: UIViewController {
         var json: NSObject = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSObject
         let d = json.valueForKey("d") as! NSDictionary
         let results = d.valueForKey("results") as! NSArray
-        for museum in  results{
+        for museum in  results {
             let name: String = museum.valueForKey("Cdenominaz_1696258377") as! String
             let lat : CLLocationDegrees = museum.valueForKey("Cglatitude_1370772947")!.doubleValue
             let lng : CLLocationDegrees = museum.valueForKey("Cglongitude_1371311400")!.doubleValue
             let address : String = museum.valueForKey("Cindirizzo_697902738") as! String
-            let phone : String = museum.valueForKey("Ctel_segr_1365663647") as! String
+            let phone : String = museum.valueForKey("Ctel_1365663647") as! String
             let www : String = museum.valueForKey("Cwww_118167") as! String
-            let artwork = Artwork(title: name,subtitle: address + " - " + phone + " - " + www,coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lng))
+            let artwork = Artwork(title: name ,subtitle: address + " - " + phone + " - " + www,coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lng))
             self.artworks.append(artwork)
 
         }

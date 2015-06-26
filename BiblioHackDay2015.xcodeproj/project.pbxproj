@@ -11,6 +11,7 @@
 		4D018AB31B3AD30E00B9278E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D018AB21B3AD30E00B9278E /* MapView.swift */; };
 		4D018AB61B3AD30F00B9278E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D018AB41B3AD30F00B9278E /* Main.storyboard */; };
 		4D018AB81B3AD31000B9278E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D018AB71B3AD31000B9278E /* Assets.xcassets */; };
+		4D42CA521B3DA48A00F464B0 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D42CA511B3DA48A00F464B0 /* CustomTabBarController.swift */; };
 		4D86FAFC1B3B1E1E00BDB36B /* MuseumsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D86FAFB1B3B1E1E00BDB36B /* MuseumsTableViewController.swift */; };
 		4D86FAFE1B3B315500BDB36B /* SubCategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D86FAFD1B3B315500BDB36B /* SubCategoriesTableViewController.swift */; };
 		4D86FB001B3B72DC00BDB36B /* CategoryOrImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D86FAFF1B3B72DC00BDB36B /* CategoryOrImageCell.xib */; };
@@ -96,6 +97,7 @@
 		4D018AC71B3AD31400B9278E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D018AD01B3AD31400B9278E /* BiblioHackDay2015UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiblioHackDay2015UITests.swift; sourceTree = "<group>"; };
 		4D018AD21B3AD31400B9278E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D42CA511B3DA48A00F464B0 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		4D86FAFB1B3B1E1E00BDB36B /* MuseumsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseumsTableViewController.swift; sourceTree = "<group>"; };
 		4D86FAFD1B3B315500BDB36B /* SubCategoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategoriesTableViewController.swift; sourceTree = "<group>"; };
 		4D86FAFF1B3B72DC00BDB36B /* CategoryOrImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryOrImageCell.xib; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				4DB305ED1B3C3BED00AC68B0 /* LaunchScreen.xib */,
 				4D86FB071B3C11ED00BDB36B /* Localizable.strings */,
 				4D018AB41B3AD30F00B9278E /* Main.storyboard */,
+				4D42CA511B3DA48A00F464B0 /* CustomTabBarController.swift */,
 			);
 			path = BiblioHackDay2015;
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 				4DB305F21B3C828B00AC68B0 /* Artwork.swift in Sources */,
 				4D018AB31B3AD30E00B9278E /* MapView.swift in Sources */,
 				4D018AAF1B3AD30E00B9278E /* AppDelegate.swift in Sources */,
+				4D42CA521B3DA48A00F464B0 /* CustomTabBarController.swift in Sources */,
 				4D86FB0B1B3C22A900BDB36B /* Resource.swift in Sources */,
 				ED18134A1B3D3AA70008A9E4 /* MuseumDetailsViewController.swift in Sources */,
 				4D86FB021B3B735400BDB36B /* CategoryOrImageCellTableViewCell.swift in Sources */,

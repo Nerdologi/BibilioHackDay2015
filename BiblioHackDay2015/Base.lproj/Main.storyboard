@@ -42,7 +42,6 @@
                                             <rect key="frame" x="15" y="0.0" width="550" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -77,39 +76,61 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Wa-2M-Jb8">
-                                <rect key="frame" x="0.0" y="64" width="600" height="200"/>
+                                <rect key="frame" x="0.0" y="118" width="600" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="nS0-Tk-JgP"/>
+                                    <constraint firstAttribute="height" constant="200" id="jul-5d-TfW"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Museum info" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlC-4K-3Wh">
-                                <rect key="frame" x="0.0" y="263" width="600" height="47"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oye-yd-yUY">
-                                <rect key="frame" x="270" y="318" width="61" height="30"/>
-                                <state key="normal" title="Explore">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oye-yd-yUY">
+                                <rect key="frame" x="270" y="494" width="61" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Esplora">
+                                    <color key="titleColor" red="1" green="0.8033783109" blue="0.30944877370000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="CZR-qq-rVf" kind="show" id="20S-qG-Gkd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZi-Jc-tse">
+                                <rect key="frame" x="16" y="84" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="AJy-g5-6np">
+                                <rect key="frame" x="14" y="334" width="572" height="31"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Museum info" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlC-4K-3Wh">
+                                <rect key="frame" x="24" y="372" width="568" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="RlC-4K-3Wh" firstAttribute="top" secondItem="prC-uy-bZt" secondAttribute="bottom" constant="199" id="H6S-Sn-4rH"/>
-                            <constraint firstItem="2Wa-2M-Jb8" firstAttribute="leading" secondItem="bSN-n7-Jfw" secondAttribute="leadingMargin" constant="-16" id="P1W-fJ-ew4"/>
-                            <constraint firstItem="RlC-4K-3Wh" firstAttribute="leading" secondItem="bSN-n7-Jfw" secondAttribute="leading" id="V0I-jV-hmK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2Wa-2M-Jb8" secondAttribute="trailing" constant="-16" id="Wcf-XF-rlX"/>
-                            <constraint firstAttribute="trailing" secondItem="RlC-4K-3Wh" secondAttribute="trailing" id="WpL-Cb-Y7T"/>
-                            <constraint firstAttribute="centerX" secondItem="Oye-yd-yUY" secondAttribute="centerX" id="Xva-TE-3Ac"/>
-                            <constraint firstItem="Oye-yd-yUY" firstAttribute="top" secondItem="RlC-4K-3Wh" secondAttribute="bottom" constant="8" id="YZ3-FA-0EE"/>
-                            <constraint firstItem="2Wa-2M-Jb8" firstAttribute="top" secondItem="prC-uy-bZt" secondAttribute="bottom" id="wYs-WC-atK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RlC-4K-3Wh" secondAttribute="trailing" constant="-8" id="154-rZ-ZHf"/>
+                            <constraint firstItem="Oye-yd-yUY" firstAttribute="top" secondItem="RlC-4K-3Wh" secondAttribute="bottom" constant="10" id="1V6-WV-wGm"/>
+                            <constraint firstItem="RlC-4K-3Wh" firstAttribute="leading" secondItem="bSN-n7-Jfw" secondAttribute="leadingMargin" constant="8" id="4n0-6h-YeY"/>
+                            <constraint firstItem="2Wa-2M-Jb8" firstAttribute="leading" secondItem="bSN-n7-Jfw" secondAttribute="leadingMargin" constant="-16" id="AxQ-fh-FKS"/>
+                            <constraint firstItem="AJy-g5-6np" firstAttribute="top" secondItem="2Wa-2M-Jb8" secondAttribute="bottom" constant="16" id="BBX-8f-JWL"/>
+                            <constraint firstItem="AJy-g5-6np" firstAttribute="trailing" secondItem="bSN-n7-Jfw" secondAttribute="trailingMargin" id="DMg-Ss-gPb"/>
+                            <constraint firstItem="UZi-Jc-tse" firstAttribute="top" secondItem="prC-uy-bZt" secondAttribute="bottom" constant="20" id="NGn-n8-2gu"/>
+                            <constraint firstItem="UZi-Jc-tse" firstAttribute="leading" secondItem="bSN-n7-Jfw" secondAttribute="leadingMargin" id="SZ4-Is-UCT"/>
+                            <constraint firstItem="RlC-4K-3Wh" firstAttribute="top" secondItem="AJy-g5-6np" secondAttribute="bottom" constant="8" id="TIU-ZO-zAF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Wa-2M-Jb8" secondAttribute="trailing" constant="-16" id="adh-6A-ebL"/>
+                            <constraint firstAttribute="centerX" secondItem="Oye-yd-yUY" secondAttribute="centerX" id="fDB-9E-6c5"/>
+                            <constraint firstItem="AJy-g5-6np" firstAttribute="leading" secondItem="bSN-n7-Jfw" secondAttribute="leadingMargin" id="om1-4a-vEv"/>
+                            <constraint firstItem="2Wa-2M-Jb8" firstAttribute="top" secondItem="UZi-Jc-tse" secondAttribute="bottom" constant="13" id="vrd-ba-yKX"/>
+                            <constraint firstItem="UZi-Jc-tse" firstAttribute="trailing" secondItem="bSN-n7-Jfw" secondAttribute="trailingMargin" id="x3I-8o-5i3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="detailsImage" destination="2Wa-2M-Jb8" id="JQk-1s-Ip1"/>
+                        <outlet property="info" destination="RlC-4K-3Wh" id="kU8-Vd-dFr"/>
+                        <outlet property="infoLabel" destination="RlC-4K-3Wh" id="PVJ-9o-Xox"/>
+                        <outlet property="titlte" destination="UZi-Jc-tse" id="0US-Fr-xZm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Si8-Oy-Kaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -238,10 +259,10 @@
             </objects>
             <point key="canvasLocation" x="770" y="393"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="CustomTabBarController" customModule="BiblioHackDay2015" customModuleProvider="target" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -262,4 +283,5 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <color key="tintColor" red="0.98039215690000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

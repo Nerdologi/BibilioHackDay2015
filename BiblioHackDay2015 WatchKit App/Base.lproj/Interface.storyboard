@@ -39,12 +39,9 @@
             <objects>
                 <controller id="ivQ-qj-6ox" customClass="MuseumDetailController" customModule="BiblioHackDay2015_WatchKit_Extension">
                     <items>
-                        <label width="1" alignment="center" text="Label" textAlignment="center" id="GXd-Im-3Up"/>
-                        <button width="1" alignment="left" title="Button" id="i10-Qo-u8v">
-                            <connections>
-                                <segue destination="Twe-fS-Iis" kind="modal" id="MYn-wl-XR9"/>
-                            </connections>
-                        </button>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" numberOfLines="3" id="GXd-Im-3Up"/>
+                        <separator alignment="left" id="iM4-E6-4gv"/>
+                        <slider width="1" alignment="left" value="1" maximum="5" steps="5" id="QXW-A7-Jdv"/>
                     </items>
                     <connections>
                         <outlet property="museumTitle" destination="GXd-Im-3Up" id="ltp-GQ-uzh"/>

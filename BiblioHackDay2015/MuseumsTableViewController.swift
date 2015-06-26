@@ -16,7 +16,8 @@ class MuseumsTableViewController: UITableViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
+        self.navigationItem.title = "MUSEI"
+        
 		// Uncomment the following line to preserve selection between presentations
 		// self.clearsSelectionOnViewWillAppear = false
 		
@@ -129,6 +130,19 @@ class MuseumsTableViewController: UITableViewController {
 		let detailsView = segue.destinationViewController as! MuseumDetailsViewController
         let museumIndex = self.tableView.indexPathForSelectedRow()?.row
         detailsView.museumID = museumArray[museumIndex!].getId()
+        detailsView.image  = museumArray[museumIndex!].getDetailsImageLink()
+        var info = ""
+        if (museumArray[museumIndex!].getAddres() != ""){
+            info = info + "\n" + museumArray[museumIndex!].getAddres()
+        }
+        if (museumArray[museumIndex!].getPhone() != ""){
+            info = info + "\n" + museumArray[museumIndex!].getPhone()
+        }
+        if (museumArray[museumIndex!].getMail() != ""){
+            info = info + "\n" + museumArray[museumIndex!].getMail()
+        }
+        detailsView.infoMuseum = info
+        detailsView.museumName = museumArray[museumIndex!].getName()
 	}
 	
 }
