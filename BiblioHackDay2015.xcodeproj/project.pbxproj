@@ -20,7 +20,13 @@
 		4DB305EE1B3C3BED00AC68B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DB305ED1B3C3BED00AC68B0 /* LaunchScreen.xib */; };
 		4DB305F01B3C626F00AC68B0 /* FullImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB305EF1B3C626F00AC68B0 /* FullImageViewController.swift */; };
 		4DB305F21B3C828B00AC68B0 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB305F11B3C828B00AC68B0 /* Artwork.swift */; };
-		4DB305F41B3C894C00AC68B0 /* MuseiJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DB305F31B3C894C00AC68B0 /* MuseiJSON.json */; };
+		811564D81B3D9D3300F164D5 /* MuseiJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 819E7BFD1B3D9BE30091549D /* MuseiJSON.json */; };
+		811564D91B3D9D3400F164D5 /* MuseiJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 819E7BFD1B3D9BE30091549D /* MuseiJSON.json */; };
+		811564DB1B3DA37800F164D5 /* SingleMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811564DA1B3DA37800F164D5 /* SingleMapController.swift */; };
+		819E7BFA1B3D8BDD0091549D /* MuseumMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819E7BF91B3D8BDD0091549D /* MuseumMapViewController.swift */; };
+		819E7BFB1B3D90220091549D /* Artwork.swift in Resources */ = {isa = PBXBuildFile; fileRef = 4DB305F11B3C828B00AC68B0 /* Artwork.swift */; };
+		819E7BFC1B3D90B10091549D /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB305F11B3C828B00AC68B0 /* Artwork.swift */; };
+		819E7BFF1B3D9C430091549D /* MuseiJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 819E7BFD1B3D9BE30091549D /* MuseiJSON.json */; };
 		81CAFFA91B3CCB83000A6F38 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAFFA81B3CCB83000A6F38 /* InterfaceController.swift */; };
 		81CAFFAD1B3CCB83000A6F38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81CAFFAC1B3CCB83000A6F38 /* Images.xcassets */; };
 		81CAFFB11B3CCB83000A6F38 /* BiblioHackDay2015 WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 81CAFFB01B3CCB83000A6F38 /* BiblioHackDay2015 WatchKit App.app */; };
@@ -35,7 +41,6 @@
 		81CAFFEF1B3CD3B0000A6F38 /* MuseumsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81CAFFCD1B3CCF2A000A6F38 /* MuseumsKit.framework */; };
 		81CAFFF01B3CD405000A6F38 /* MuseumsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81CAFFCD1B3CCF2A000A6F38 /* MuseumsKit.framework */; };
 		81CAFFF11B3CD577000A6F38 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D86FB0A1B3C22A900BDB36B /* Resource.swift */; };
-		81CAFFF21B3CEAD8000A6F38 /* MuseiJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DB305F31B3C894C00AC68B0 /* MuseiJSON.json */; };
 		81CAFFF41B3CF5FE000A6F38 /* MuseumDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAFFF31B3CF5FE000A6F38 /* MuseumDetailController.swift */; };
 		ED18134A1B3D3AA70008A9E4 /* MuseumDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1813491B3D3AA70008A9E4 /* MuseumDetailsViewController.swift */; };
 /* End PBXBuildFile section */
@@ -104,8 +109,10 @@
 		4D86FB0A1B3C22A900BDB36B /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = ../BiblioHackDay2015/Resource.swift; sourceTree = "<group>"; };
 		4DB305ED1B3C3BED00AC68B0 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = ../LaunchScreen.xib; sourceTree = "<group>"; };
 		4DB305EF1B3C626F00AC68B0 /* FullImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullImageViewController.swift; sourceTree = "<group>"; };
-		4DB305F11B3C828B00AC68B0 /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
-		4DB305F31B3C894C00AC68B0 /* MuseiJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MuseiJSON.json; path = ../BiblioHackDay2015/MuseiJSON.json; sourceTree = "<group>"; };
+		4DB305F11B3C828B00AC68B0 /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Artwork.swift; path = ../BiblioHackDay2015/Artwork.swift; sourceTree = "<group>"; };
+		811564DA1B3DA37800F164D5 /* SingleMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleMapController.swift; sourceTree = "<group>"; };
+		819E7BF91B3D8BDD0091549D /* MuseumMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseumMapViewController.swift; sourceTree = "<group>"; };
+		819E7BFD1B3D9BE30091549D /* MuseiJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MuseiJSON.json; sourceTree = "<group>"; };
 		81CAFFA31B3CCB83000A6F38 /* BiblioHackDay2015 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BiblioHackDay2015 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81CAFFA61B3CCB83000A6F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81CAFFA71B3CCB83000A6F38 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
@@ -193,7 +200,6 @@
 			children = (
 				4D018ABC1B3AD31000B9278E /* Info.plist */,
 				4D018AAE1B3AD30E00B9278E /* AppDelegate.swift */,
-				4DB305F11B3C828B00AC68B0 /* Artwork.swift */,
 				4D86FB011B3B735400BDB36B /* CategoryOrImageCellTableViewCell.swift */,
 				4DB305EF1B3C626F00AC68B0 /* FullImageViewController.swift */,
 				4D018AB21B3AD30E00B9278E /* MapView.swift */,
@@ -235,6 +241,8 @@
 				81CAFFA51B3CCB83000A6F38 /* Supporting Files */,
 				81CAFFC61B3CCC5F000A6F38 /* MuseumTableRow.swift */,
 				81CAFFF31B3CF5FE000A6F38 /* MuseumDetailController.swift */,
+				819E7BF91B3D8BDD0091549D /* MuseumMapViewController.swift */,
+				811564DA1B3DA37800F164D5 /* SingleMapController.swift */,
 			);
 			path = "BiblioHackDay2015 WatchKit Extension";
 			sourceTree = "<group>";
@@ -269,7 +277,8 @@
 		81CAFFCE1B3CCF2A000A6F38 /* MuseumsKit */ = {
 			isa = PBXGroup;
 			children = (
-				4DB305F31B3C894C00AC68B0 /* MuseiJSON.json */,
+				819E7BFD1B3D9BE30091549D /* MuseiJSON.json */,
+				4DB305F11B3C828B00AC68B0 /* Artwork.swift */,
 				4D86FB0A1B3C22A900BDB36B /* Resource.swift */,
 				81CAFFD11B3CCF2A000A6F38 /* MuseumsKit.h */,
 				81CAFFCF1B3CCF2A000A6F38 /* Supporting Files */,
@@ -460,11 +469,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				819E7BFB1B3D90220091549D /* Artwork.swift in Resources */,
+				811564D81B3D9D3300F164D5 /* MuseiJSON.json in Resources */,
 				4DB305EE1B3C3BED00AC68B0 /* LaunchScreen.xib in Resources */,
 				4D86FB051B3C11ED00BDB36B /* Localizable.strings in Resources */,
 				4D018AB81B3AD31000B9278E /* Assets.xcassets in Resources */,
 				4D86FB001B3B72DC00BDB36B /* CategoryOrImageCell.xib in Resources */,
-				4DB305F41B3C894C00AC68B0 /* MuseiJSON.json in Resources */,
 				4D018AB61B3AD30F00B9278E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,9 +483,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81CAFFF21B3CEAD8000A6F38 /* MuseiJSON.json in Resources */,
 				81CAFFAD1B3CCB83000A6F38 /* Images.xcassets in Resources */,
 				81CAFFB11B3CCB83000A6F38 /* BiblioHackDay2015 WatchKit App.app in Resources */,
+				811564D91B3D9D3400F164D5 /* MuseiJSON.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +502,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				819E7BFF1B3D9C430091549D /* MuseiJSON.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,7 +536,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811564DB1B3DA37800F164D5 /* SingleMapController.swift in Sources */,
 				81CAFFF41B3CF5FE000A6F38 /* MuseumDetailController.swift in Sources */,
+				819E7BFA1B3D8BDD0091549D /* MuseumMapViewController.swift in Sources */,
 				81CAFFA91B3CCB83000A6F38 /* InterfaceController.swift in Sources */,
 				81CAFFC71B3CCC5F000A6F38 /* MuseumTableRow.swift in Sources */,
 			);
@@ -536,6 +549,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81CAFFEE1B3CCFCF000A6F38 /* MuseumsHandler.swift in Sources */,
+				819E7BFC1B3D90B10091549D /* Artwork.swift in Sources */,
 				81CAFFF11B3CD577000A6F38 /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

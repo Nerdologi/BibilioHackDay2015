@@ -12,6 +12,8 @@
 	<dict>
 		<key>64B92BCCE5F98761EF8996DB48EFD8D2EC40256B</key>
 		<string>https://github.com/Nerdologi/BibilioHackDay2015.git</string>
+		<key>A0AB8C405E12DD9FC826768A7A2AEBAE95FE1673</key>
+		<string>https://github.com/Nerdologi/BibilioHackDay2015.git</string>
 		<key>C3850E4C09D05C91734E6DFC68F57A4DC2AD29B2</key>
 		<string>https://github.com/Nerdologi/BibilioHackDay2015.git</string>
 	</dict>
@@ -21,17 +23,27 @@
 	<dict>
 		<key>64B92BCCE5F98761EF8996DB48EFD8D2EC40256B</key>
 		<string>../../../BiblioHackDay2015</string>
-		<key>C3850E4C09D05C91734E6DFC68F57A4DC2AD29B2</key>
+		<key>A0AB8C405E12DD9FC826768A7A2AEBAE95FE1673</key>
 		<string>../..</string>
+		<key>C3850E4C09D05C91734E6DFC68F57A4DC2AD29B2</key>
+		<string>../../../BibilioHackDay2015</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/Nerdologi/BibilioHackDay2015.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C3850E4C09D05C91734E6DFC68F57A4DC2AD29B2</string>
+	<string>A0AB8C405E12DD9FC826768A7A2AEBAE95FE1673</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A0AB8C405E12DD9FC826768A7A2AEBAE95FE1673</string>
+			<key>IDESourceControlWCCName</key>
+			<string>3.%20BibilioHackDay2015</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

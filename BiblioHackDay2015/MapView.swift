@@ -30,12 +30,12 @@ class MapView: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-        func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-            regionRadius * 15.0, regionRadius * 15.0)
-        self.map.setRegion(coordinateRegion, animated: true)
-    }
-    
+	func centerMapOnLocation(location: CLLocation) {
+		let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+			regionRadius * 15.0, regionRadius * 15.0)
+		self.map.setRegion(coordinateRegion, animated: true)
+	}
+	
     func loadInitialData() {
         let fileName = NSBundle.mainBundle().pathForResource("MuseiJSON", ofType: "json");
         var readError : NSError?
@@ -49,7 +49,7 @@ class MapView: UIViewController {
             let lat : CLLocationDegrees = museum.valueForKey("Cglatitude_1370772947")!.doubleValue
             let lng : CLLocationDegrees = museum.valueForKey("Cglongitude_1371311400")!.doubleValue
             let address : String = museum.valueForKey("Cindirizzo_697902738") as! String
-            let phone : String = museum.valueForKey("Ctel_segr_1365663647") as! String
+            let phone : String = museum.valueForKey("Ctel_1365663647") as! String
             let www : String = museum.valueForKey("Cwww_118167") as! String
             let artwork = Artwork(title: name,subtitle: address + " - " + phone + " - " + www,coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lng))
             self.artworks.append(artwork)
