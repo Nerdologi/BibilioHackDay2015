@@ -41,11 +41,6 @@
             <objects>
                 <controller id="ivQ-qj-6ox" customClass="MuseumDetailController" customModule="BiblioHackDay2015_WatchKit_Extension">
                     <items>
-<<<<<<< HEAD
-                        <label width="1" alignment="left" text="Label" textAlignment="center" numberOfLines="3" id="GXd-Im-3Up"/>
-                        <separator alignment="left" id="iM4-E6-4gv"/>
-                        <slider width="1" alignment="left" value="1" maximum="5" steps="5" id="QXW-A7-Jdv"/>
-=======
                         <label width="1" alignment="left" text="Label" textAlignment="center" numberOfLines="3" id="GXd-Im-3Up">
                             <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </label>
@@ -58,7 +53,7 @@
                                 <segue destination="793-ao-c4x" kind="modal" id="XkM-jC-SUF"/>
                             </connections>
                         </button>
->>>>>>> origin/master
+
                     </items>
                     <connections>
                         <outlet property="buttonImage" destination="8de-F1-K0S" id="6dh-k3-mN8"/>
