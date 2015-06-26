@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5828367E-DB29-4908-ABD4-A44E8B0CA640</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BiblioHackDay2015</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>64B92BCCE5F98761EF8996DB48EFD8D2EC40256B</key>
+		<string>https://github.com/Nerdologi/BibilioHackDay2015.git</string>
+		<key>C3850E4C09D05C91734E6DFC68F57A4DC2AD29B2</key>
+		<string>https://github.com/Nerdologi/BibilioHackDay2015.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BiblioHackDay2015.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>64B92BCCE5F98761EF8996DB48EFD8D2EC40256B</key>
+		<string>../../../BiblioHackDay2015</string>
+		<key>C3850E4C09D05C91734E6DFC68F57A4DC2AD29B2</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Nerdologi/BibilioHackDay2015.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C3850E4C09D05C91734E6DFC68F57A4DC2AD29B2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C3850E4C09D05C91734E6DFC68F57A4DC2AD29B2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BibilioHackDay2015</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>64B92BCCE5F98761EF8996DB48EFD8D2EC40256B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BiblioHackDay2015</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Museums-->
+        <scene sceneID="UyE-AE-roN">
+            <objects>
+                <navigationController id="H0n-Sa-uSi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Museums" image="first" id="lSZ-WM-bWd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pMx-Qx-inY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="uZl-2b-raN" kind="relationship" relationship="rootViewController" id="hOa-bb-HtB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vkv-Tl-s7k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="-817"/>
+        </scene>
+        <!--Museums-->
+        <scene sceneID="NjM-ho-8EL">
+            <objects>
+                <tableViewController id="uZl-2b-raN" customClass="MuseumsTableViewController" customModule="BiblioHackDay2015" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="UHF-ve-dqq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="museumCell" textLabel="VWj-fU-TmY" style="IBUITableViewCellStyleDefault" id="ub5-TW-0gp">
+                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ub5-TW-0gp" id="vdk-cS-bsa">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VWj-fU-TmY">
+                                            <rect key="frame" x="15" y="0.0" width="550" height="43"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Ozq-kC-yNz" kind="show" id="PxB-wm-Qbd"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uZl-2b-raN" id="gb5-EW-ELR"/>
+                            <outlet property="delegate" destination="uZl-2b-raN" id="mkk-sC-3kp"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Museums" image="first" id="TDo-4I-KYd"/>
+                    <navigationItem key="navigationItem" id="AhR-zf-9fz"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="znq-dO-Kzc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1575" y="-817"/>
+        </scene>
+        <!--Museum Details View Controller-->
+        <scene sceneID="nqa-Ia-haR">
+            <objects>
+                <viewController id="Ozq-kC-yNz" customClass="MuseumDetailsViewController" customModule="BiblioHackDay2015" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="prC-uy-bZt"/>
+                        <viewControllerLayoutGuide type="bottom" id="NfT-Wf-Qnk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bSN-n7-Jfw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Wa-2M-Jb8">
+                                <rect key="frame" x="0.0" y="64" width="600" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="nS0-Tk-JgP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Museum info" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlC-4K-3Wh">
+                                <rect key="frame" x="0.0" y="263" width="600" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oye-yd-yUY">
+                                <rect key="frame" x="270" y="318" width="61" height="30"/>
+                                <state key="normal" title="Explore">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CZR-qq-rVf" kind="show" id="20S-qG-Gkd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RlC-4K-3Wh" firstAttribute="top" secondItem="prC-uy-bZt" secondAttribute="bottom" constant="199" id="H6S-Sn-4rH"/>
+                            <constraint firstItem="2Wa-2M-Jb8" firstAttribute="leading" secondItem="bSN-n7-Jfw" secondAttribute="leadingMargin" constant="-16" id="P1W-fJ-ew4"/>
+                            <constraint firstItem="RlC-4K-3Wh" firstAttribute="leading" secondItem="bSN-n7-Jfw" secondAttribute="leading" id="V0I-jV-hmK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Wa-2M-Jb8" secondAttribute="trailing" constant="-16" id="Wcf-XF-rlX"/>
+                            <constraint firstAttribute="trailing" secondItem="RlC-4K-3Wh" secondAttribute="trailing" id="WpL-Cb-Y7T"/>
+                            <constraint firstAttribute="centerX" secondItem="Oye-yd-yUY" secondAttribute="centerX" id="Xva-TE-3Ac"/>
+                            <constraint firstItem="Oye-yd-yUY" firstAttribute="top" secondItem="RlC-4K-3Wh" secondAttribute="bottom" constant="8" id="YZ3-FA-0EE"/>
+                            <constraint firstItem="2Wa-2M-Jb8" firstAttribute="top" secondItem="prC-uy-bZt" secondAttribute="bottom" id="wYs-WC-atK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Si8-Oy-Kaw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2372" y="-817"/>
+        </scene>
+        <!--Sub Categories Table View Controller-->
+        <scene sceneID="AkW-9b-tJl">
+            <objects>
+                <tableViewController id="CZR-qq-rVf" customClass="SubCategoriesTableViewController" customModule="BiblioHackDay2015" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="NnZ-0O-ZVv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="bSe-P5-6cI" customClass="CategoryOrImageCellTableViewCell" customModule="BiblioHackDay2015" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bSe-P5-6cI" id="6rz-qa-IKD">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="05g-F8-dOZ" kind="show" id="rXY-jG-4Tw"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="CZR-qq-rVf" id="I4R-3I-pZU"/>
+                            <outlet property="delegate" destination="CZR-qq-rVf" id="NY9-aQ-YgO"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zI-Sp-vOH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3131" y="-817"/>
+        </scene>
+        <!--Full Image View Controller-->
+        <scene sceneID="FTh-mf-B6d">
+            <objects>
+                <viewController storyboardIdentifier="fullImageIdentifier" id="05g-F8-dOZ" customClass="FullImageViewController" customModule="BiblioHackDay2015" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="II0-MI-CtT"/>
+                        <viewControllerLayoutGuide type="bottom" id="LCn-dh-LZG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mes-Uu-Y8G">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Xc-no-qKF">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Loadin media..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czO-TA-r4J">
+                                <rect key="frame" x="237" y="297" width="127" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Xc-no-qKF" firstAttribute="top" secondItem="II0-MI-CtT" secondAttribute="bottom" id="3e0-me-XYz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Xc-no-qKF" secondAttribute="trailing" constant="-16" id="Rh8-nW-xDh"/>
+                            <constraint firstItem="3Xc-no-qKF" firstAttribute="leading" secondItem="Mes-Uu-Y8G" secondAttribute="leadingMargin" constant="-16" id="eEB-bl-qaf"/>
+                            <constraint firstItem="LCn-dh-LZG" firstAttribute="top" secondItem="3Xc-no-qKF" secondAttribute="bottom" id="eur-qd-rWs"/>
+                            <constraint firstAttribute="centerX" secondItem="czO-TA-r4J" secondAttribute="centerX" id="iAn-wj-csL"/>
+                            <constraint firstAttribute="centerY" secondItem="czO-TA-r4J" secondAttribute="centerY" id="wXz-Lp-bhl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="3Xc-no-qKF" id="lax-5X-jHZ"/>
+                        <outlet property="loadingLabel" destination="czO-TA-r4J" id="4Iv-7N-IR9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cEk-iN-CkZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3883" y="-817"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="MapView" customModule="BiblioHackDay2015" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ibz-80-9dg">
+                                <rect key="frame" x="-8" y="0.0" width="608" height="551"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ibz-80-9dg" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" id="DYs-47-4IO"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="Ibz-80-9dg" secondAttribute="bottom" id="T5R-3a-QEZ"/>
+                            <constraint firstItem="Ibz-80-9dg" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-24" id="oA9-1F-1SB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ibz-80-9dg" secondAttribute="trailing" constant="-16" id="xki-kk-7PD"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="second" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" id="oXW-aE-WJ6"/>
+                    <connections>
+                        <outlet property="map" destination="Ibz-80-9dg" id="Zbd-Ov-CIe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1575" y="393"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="nxt-YP-z1x">
+            <objects>
+                <navigationController id="0kM-Z9-uou" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" image="second" id="oob-SO-lfx"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UHn-ah-bms">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="23X-9T-v4H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U90-DX-g8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="393"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="H0n-Sa-uSi" kind="relationship" relationship="viewControllers" id="Rop-ls-zHd"/>
+                        <segue destination="0kM-Z9-uou" kind="relationship" relationship="viewControllers" id="EAr-8S-Gse"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>

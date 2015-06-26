@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BiblioHackDay2015_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="w8s-FG-mwT">
+                            <items>
+                                <tableRow identifier="MuseumRow" id="a5I-Qp-vP1" customClass="MuseumTableRow" customModule="BiblioHackDay2015_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="NUZ-5e-HIb">
+                                        <items>
+                                            <label height="1" alignment="left" verticalAlignment="center" text="Label" id="WkI-Rs-pWC"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowTitle" destination="WkI-Rs-pWC" id="KRg-aY-Zmh"/>
+                                        <segue destination="ivQ-qj-6ox" kind="modal" identifier="MuseumDetails" id="Yob-hc-5ye"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="museumsTable" destination="w8s-FG-mwT" id="zfV-vr-u65"/>
+                        <segue destination="sFE-oF-Q9O" kind="relationship" relationship="nextPage" id="QxY-Nx-2oA"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="95" y="222"/>
+        </scene>
+        <!--Museum Detail Controller-->
+        <scene sceneID="yO1-80-OGq">
+            <objects>
+                <controller id="ivQ-qj-6ox" customClass="MuseumDetailController" customModule="BiblioHackDay2015_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="center" text="Label" textAlignment="center" id="GXd-Im-3Up"/>
+                        <button width="1" alignment="left" title="Button" id="i10-Qo-u8v">
+                            <connections>
+                                <segue destination="Twe-fS-Iis" kind="modal" id="MYn-wl-XR9"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="museumTitle" destination="GXd-Im-3Up" id="ltp-GQ-uzh"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="386" y="222"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="QJ4-YP-seh">
+            <objects>
+                <controller id="Twe-fS-Iis"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="222"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="GYJ-Ov-EIU">
+            <objects>
+                <controller id="sFE-oF-Q9O">
+                    <items>
+                        <map width="1" height="1" alignment="left" id="Srl-PU-hPN"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="337" y="551"/>
+        </scene>
+    </scenes>
+</document>

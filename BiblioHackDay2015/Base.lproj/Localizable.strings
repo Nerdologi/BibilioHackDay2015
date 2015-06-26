@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  BiblioHackDay2015
+
+  Created by Silvio Messi on 25/06/15.
+  Copyright © 2015 Nerdologi. All rights reserved.
+*/
+
+"loading" = "Loading media...";
+"error" = "Error!";
