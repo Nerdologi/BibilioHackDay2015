@@ -43,6 +43,7 @@
 		81CAFFF01B3CD405000A6F38 /* MuseumsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81CAFFCD1B3CCF2A000A6F38 /* MuseumsKit.framework */; };
 		81CAFFF11B3CD577000A6F38 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D86FB0A1B3C22A900BDB36B /* Resource.swift */; };
 		81CAFFF41B3CF5FE000A6F38 /* MuseumDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CAFFF31B3CF5FE000A6F38 /* MuseumDetailController.swift */; };
+		81DD49AC1B3DB399002CC6E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D018AB71B3AD31000B9278E /* Assets.xcassets */; };
 		ED18134A1B3D3AA70008A9E4 /* MuseumDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1813491B3D3AA70008A9E4 /* MuseumDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -424,6 +425,7 @@
 		4D018AA31B3AD30E00B9278E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Nerdologi;
 				TargetAttributes = {
@@ -505,6 +507,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81DD49AC1B3DB399002CC6E9 /* Assets.xcassets in Resources */,
 				819E7BFF1B3D9C430091549D /* MuseiJSON.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -707,7 +710,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BiblioHackDay2015/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nerdologi.BiblioHackDay2015;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -719,7 +722,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BiblioHackDay2015/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nerdologi.BiblioHackDay2015;
 				PRODUCT_NAME = "$(TARGET_NAME)";

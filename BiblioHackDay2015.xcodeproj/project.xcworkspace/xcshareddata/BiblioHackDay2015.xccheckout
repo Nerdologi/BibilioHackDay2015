@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>5828367E-DB29-4908-ABD4-A44E8B0CA640</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>BiblioHackDay2015</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A0AB8C405E12DD9FC826768A7A2AEBAE95FE1673</key>
 		<string>https://github.com/Nerdologi/BibilioHackDay2015.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>BiblioHackDay2015.xcodeproj/project.xcworkspace</string>
+	<string>BiblioHackDay2015.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A0AB8C405E12DD9FC826768A7A2AEBAE95FE1673</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>A0AB8C405E12DD9FC826768A7A2AEBAE95FE1673</string>
 			<key>IDESourceControlWCCName</key>
-			<string>BiblioHackDay2015</string>
+			<string>3.%20BibilioHackDay2015</string>
 		</dict>
 	</array>
 </dict>
